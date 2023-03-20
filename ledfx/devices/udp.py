@@ -107,7 +107,7 @@ class UDPRealtimeDevice(UDPDevice):
                 udpData = packets.build_warls_packet(
                     data, timeout, self.last_frame
                 )
-                self.transmit_packet(udpData, frame_is_equal_to_last)
+               
             else:
                 udpData = packets.build_drgb_packet(data, timeout)
                 self.transmit_packet(udpData, frame_is_equal_to_last)
